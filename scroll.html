@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+</head>
+<script type="text/javascript" src="jquery-3.0.0.js"></script>
+<script type="text/javascript">
+	$(window).scroll(function(){
+		$('.scroll-line').css('width', ($(window).scrollTop()/($(document).height()-$(window).height())*100 + '%'));
+	});
+
+</script>
+<style type="text/css">
+body{
+	height: 5000px
+}	
+.scroll-line{
+	width: 0%;
+	background-color: red;
+	height: 10px;
+	position: fixed;
+	left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+</style>
+<body >
+<div class="scroll-line"></div>
+</body>
+</html>
