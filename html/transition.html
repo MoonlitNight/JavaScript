@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>transition</title>
+	<script type="text/javascript" src="../js/lib/jquery-3.0.0.js"></script>
+	<style type="text/css">
+		.jj{
+			width: 1200px;
+			height: 300px;
+	
+		}
+		.xx{
+			background-image: url("../images/1.jpg");
+			width: 100%;
+			height: 100%;
+			opacity:1;
+			transition-property: opacity;
+			transition-duration: 2s;
+			transition-timing-function: ease;
+			z-index: -1;
+			left: 0;
+		    right: 0;
+		    top: 0;
+		    bottom: 0;
+		    position: fixed;
+		   	background-size: cover;
+		}
+		.yy{
+			width: 100%;
+   			height: 100%;
+			background-image: url("../images/2.jpg");
+			opacity:1;
+			transition-property: opacity;
+			background-size: cover;
+			transition-duration: 2s;
+			transition-timing-function: ease;
+			z-index: -1;
+			left: 0;
+		    right: 0;
+		    top: 0;
+		    bottom: 0;
+		    position: fixed;
+		    background-size: cover;
+		}
+		.fadeOut{
+			opacity:0;
+		}
+
+	</style>
+	<script type="text/javascript">
+		$(function(){
+			$("button").click(function(){
+				$(".yy").addClass("fadeOut");
+			})
+
+		})
+
+	</script>
+</head>
+<body>
+<div class="jj">
+<div class="xx"></div>
+<div class="yy"></div>
+<button>click</button>
+</div>
+
+</body>
+</html>
